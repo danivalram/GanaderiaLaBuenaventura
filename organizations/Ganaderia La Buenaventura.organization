@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Ganaderia La Buenaventura">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="paco.martinez">
+      <firstName>Paco</firstName>
+      <lastName>Martínez</lastName>
+      <jobTitle>Jefe de la empresa</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="carmina.sanchez">
+      <firstName>Carmina</firstName>
+      <lastName>Sánchez</lastName>
+      <jobTitle>Gestora de compraventa de animales y recursos</jobTitle>
+      <manager>paco.martinez</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="pepe.gutierrez">
+      <firstName>Jose</firstName>
+      <lastName>Gutiérrez</lastName>
+      <jobTitle>Cuidador de vacas y caballos</jobTitle>
+      <manager>paco.martinez</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="tomas.mateo">
+      <firstName>Tomás</firstName>
+      <lastName>Mateo</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Cuidador animales">
+      <displayName>Cuidador animales</displayName>
+    </role>
+    <role name="Gestor">
+      <displayName>Gestor</displayName>
+    </role>
+    <role name="Director">
+      <displayName>Director</displayName>
+    </role>
+    <role name="Cliente">
+      <displayName>Cliente</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="LaBuenaventura">
+      <displayName>LaBuenaventura</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>pepe.gutierrez</userName>
+      <roleName>Cuidador animales</roleName>
+      <groupName>LaBuenaventura</groupName>
+    </membership>
+    <membership>
+      <userName>carmina.sanchez</userName>
+      <roleName>Gestor</roleName>
+      <groupName>LaBuenaventura</groupName>
+    </membership>
+    <membership>
+      <userName>paco.martinez</userName>
+      <roleName>Director</roleName>
+      <groupName>LaBuenaventura</groupName>
+    </membership>
+    <membership>
+      <userName>tomas.mateo</userName>
+      <roleName>Cliente</roleName>
+      <groupName>LaBuenaventura</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
